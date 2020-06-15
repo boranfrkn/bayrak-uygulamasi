@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C7D82"
+    tools:context=".QuizActivity">
+
+    <TextView
+        android:id="@+id/textViewDogru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:text="Doğru = 0"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewYanlis"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewYanlis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Yanlış = 0"
+        android:textColor="@color/TextColor"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewDogru"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewSoruSayisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="1. Soru"
+        android:textColor="@color/TextColor"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewBayrak"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textviewSoruSayisi"
+        app:srcCompat="@drawable/almanya" />
+
+    <Button
+        android:id="@+id/buttonA"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn"
+        android:text="Türkiye"
+        android:textColor="@color/TextColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewBayrak" />
+
+    <Button
+        android:id="@+id/buttonB"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn"
+        android:text="Almanya"
+        android:textColor="@color/TextColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonA" />
+
+    <Button
+        android:id="@+id/buttonC"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn"
+        android:text="Belçika"
+        android:textColor="@color/TextColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonB" />
+
+    <Button
+        android:id="@+id/buttonD"
+        android:layout_width="300sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn"
+        android:text="Rusya"
+        android:textColor="@color/TextColor"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonC" />
+</androidx.constraintlayout.widget.ConstraintLayout>
